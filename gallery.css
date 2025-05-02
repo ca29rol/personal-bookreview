@@ -1,0 +1,49 @@
+.images{
+    background-image: url(image/backgroung-pin.jpg);
+    background-repeat: repeat-2;
+}
+#tr1{
+    width: 30%;
+    height: 80vh;
+}
+.navigation{
+    position: absolute;
+    left: 20cm;
+    font-size: 30px;
+    top: 23cm;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+@media (max-width:600px){
+    .images{
+        background-image: url(image/Born-a-Crime-Trevor-Noah.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: move-images 10s infinite;
+    }
+    #tr1{
+        width: 30%;
+        height: 80vh;
+    }
+    .navigation{
+        position: relative;
+        left: 20cm;
+        font-size: 30px;
+        top: 23cm;
+    }
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    @keyframes move-images{
+        0%{
+            left:0;
+        }
+        100%{
+            right: 0%;
+        }
+    }
+}
